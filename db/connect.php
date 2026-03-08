@@ -1,18 +1,18 @@
 <?php
         // require_once __DIR__ . '/config.php';
 
-            $db_host = 'localhost';
-    $db_user = 'innis301_jayden';
-    $db_password = 'Whistler2026!';
-    $db_db = 'u982216266_img_gallery';
+    //         $db_host = 'localhost';
+    // $db_user = 'innis301_jayden';
+    // $db_password = 'Whistler2026!';
+    // $db_db = 'u982216266_img_gallery';
 
         // LIVE SERVER VERSION
-        // $db_host = 'localhost';
-        // $db_user = 'root';
-        // $db_password = 'root';
-        // $db_db = 'inniss301_img-gallery';
+        $db_host = 'localhost';
+        $db_user = 'root';
+        $db_password = 'root'; 
+        $db_db = 'inniss301_img-gallery';
 
-        $imgs = @new mysqli(
+        $imgs = new mysqli(
             $db_host,
             $db_user,
             $db_password,
