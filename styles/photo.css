@@ -8,9 +8,17 @@ main {
 
 #photo-hero {
   display: flex;
-  height: 900px;
+  height: 100vh;
   overflow: hidden;
   align-items: center;
+  padding-top: 80px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
 
   #photo-hero-bg {
     /* background-image: url("../media/img/gallery/photo-hero.jpg"); */
@@ -379,3 +387,44 @@ h3:hover {
 .section-6 .figure.hover figcaption:after {
   opacity: 1 !important;
 }
+
+/* -------------------------------------------------------------------- */
+/* PHOTO HUB — 2×2 full-width category cards on photo.php               */
+/* -------------------------------------------------------------------- */
+
+.photo-hub-grid {
+  width: 100vw;
+}
+
+.photo-hub-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 5px;
+  padding: 5px;
+}
+
+.photo-hub-row .figure {
+  flex-basis: unset;
+  width: 100%;
+  min-height: 42vw;
+  margin: 0;
+}
+
+/* Always show label on mobile (no hover on touch devices) */
+@media screen and (max-width: 1199px) {
+  .photo-hub-row .figure figcaption {
+    opacity: 1;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+    justify-content: flex-end;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo-hub-row .figure {
+    min-height: 26vw;
+  }
+}
+
+/* -------------------------------------------------------------------- */
