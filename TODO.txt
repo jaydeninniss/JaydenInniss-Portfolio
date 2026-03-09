@@ -1,3 +1,6 @@
 - Drop down photo menu
 - Fill in photo pages
-- 
+- Back button on photosubpages
+- Next and back project buttons are not active yet... #
+- Make titles on photo page constant (OR photoshop?) nah
+- Add a title on photo.php or description or idk maybe remove hero image and make it a bg?
