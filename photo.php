@@ -50,9 +50,9 @@
     <main>
 
         <!-- HERO IMAGE -->
-        <div id="photo-hero">
+        <!-- <div id="photo-hero">
             <img src="/gallery/photo-hero.webp" alt="">
-        </div>
+        </div> -->
         <!-- END HERO IMAGE -->
 
         <div class="content-container">
