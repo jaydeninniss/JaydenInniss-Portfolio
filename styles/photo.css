@@ -134,6 +134,48 @@ h3:hover {
 }
 
 
+/* -------------------------------------------------------------------- */
+/* GALLERY GRID — rendered by includes/gallery.php                       */
+/* -------------------------------------------------------------------- */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 0 12px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0 40px;
+  }
+}
+
+/* Wide images (landscape ratio > 1.3) span two columns */
+.gallery-grid .grid-item.wide {
+  grid-column: span 2;
+}
+
+.gallery-grid .grid-item {
+  display: block;
+  overflow: hidden;
+}
+
+.gallery-grid .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* -------------------------------------------------------------------- */
+
 /* CLIENT CARDS - Thanks Codepen! :) */
 
 .row {

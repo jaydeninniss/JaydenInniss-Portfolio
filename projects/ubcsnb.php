@@ -1,3 +1,15 @@
+<?php
+// --- Project config ---
+$project = [
+    'title'       => 'UBC Ski and Board Club',
+    'description' => 'Photography & Videography for social media.',
+    'folder'      => 'gallery/projects/ubcsnb',
+    'web_folder'  => '/gallery/projects/ubcsnb',
+    'cover'       => '/gallery/projects/ubcsnb/cover.webp',
+];
+
+include '../includes/gallery.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +34,7 @@
         <script type="module">
         import PhotoSwipeLightbox from '/plugins/photoswipe/photoswipe-lightbox.esm.js';
         const options = {
-        gallery: '#my-gallery',
+        gallery: '#project-gallery',
         children: 'a',
         pswpModule: () => import('/plugins/photoswipe/photoswipe.esm.js')
         };
@@ -72,14 +84,6 @@
     <?php include "../parts/header.php" ?>
     <?php include "../parts/hamburger.php" ?>
 
-    <?php 
-        include '../db/connect.php'; 
-        $id = "10";
-
-        $result2 = $imgs->query('SELECT * FROM sets WHERE set_id=' . $id);
-        $title = $result2->fetch_assoc()
-    ?>
-
     <main>
         <!-- Header Img -->
         <div class="hero">
@@ -94,27 +98,9 @@
                         <p>Photography & Videography for social media</p>
                 </div>
 
+                <!-- Project gallery — filesystem-driven via render_gallery() -->
+                <?php render_gallery($project['folder'], $project['web_folder'], 'project-gallery'); ?>
 
-                <div class="grid">
-
-                    <?php
-                        $id = "10";
-
-                        $result = $imgs->query('SELECT * FROM imgs WHERE set_id=' . $id);
-                        while($img = $result->fetch_assoc()) {
-                    ?>
-
-                        <a href="../<?php echo $img['photo_path']; echo $img['file']?>"
-                            class="grid-item <?php echo $img['flexclass']; ?>"
-                            data-pswp-width="<?php echo $img['width']; ?>"
-                            data-pswp-height="<?php echo $img['height']; ?>"
-                            target="_blank">
-                            <img loading="lazy" src="../<?php echo $img['photo_path']; echo $img['file'];?>" alt=""/>
-                        </a>
-
-                    <?php }; ?>
-
-                    </div>
 
                 <h3 class="question" id="first">2024 Beach Kegger</h3>
 

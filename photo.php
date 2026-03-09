@@ -1,3 +1,4 @@
+<?php include 'includes/gallery.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- LENIS - SMOOTH SCROLL -->
-    <!-- <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script> 
+    <!-- <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css"> -->
 
     <!-- SEO -->
@@ -47,17 +48,20 @@
     <!-- PHOTOSWIPE PLUGIN -->
     <script type="module">
         import PhotoSwipeLightbox from '/plugins/photoswipe/photoswipe-lightbox.esm.js';
-        const options = {
-        gallery: '#my-gallery',
-        children: 'a',
-        pswpModule: () => import('/plugins/photoswipe/photoswipe.esm.js')
-        };
-        const lightbox = new PhotoSwipeLightbox(options);
-        lightbox.init();
+
+        // Initialise a separate PhotoSwipe instance for each gallery on the page.
+        ['adventure-gallery', 'landscape-gallery'].forEach(function(id) {
+            const lightbox = new PhotoSwipeLightbox({
+                gallery: '#' + id,
+                children: 'a',
+                pswpModule: () => import('/plugins/photoswipe/photoswipe.esm.js')
+            });
+            lightbox.init();
+        });
     </script>
 
     <link rel="stylesheet" href="/plugins/photoswipe/photoswipe.css">
-        <!-- END PHOTOSWIPE PLUGIN -->
+    <!-- END PHOTOSWIPE PLUGIN -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
@@ -68,11 +72,6 @@
 
     <?php include "./parts/header.php" ?>
     <?php include "parts/hamburger.php" ?>
-    <?php include 'db/connect.php';?>
-
-    <?php 
-        $result2 = $imgs->query('SELECT * FROM sets');
-    ?>
 
     <main>
 
@@ -82,10 +81,9 @@
     </div> -->
     <!-- END HERO IMAGE -->
 
-
-
     <div class="content-container">
 
+        <!-- CLIENT PROJECTS — static grid of figure cards linking to project pages -->
         <div id="commercial">
             <div class="header-banner">
                 <h2>Client Projects</h2>
@@ -95,71 +93,83 @@
                 <section class="section-6">
                     <div class="row">
 
-                        <?php while($title = $result2->fetch_assoc()) { ?>
-                            <h3 class="client-title-mobile"><?php echo $title['set_title']; ?></h3>
-                            <figure class="figure client">
-                                <img src="<?php echo $title['set_cover']; ?>">
-                                <figcaption>
-                                    <h3 class="client-title-desktop"><?php echo $title['set_title']; ?></h3>
+                        <h3 class="client-title-mobile">WORCA</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/worca/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">WORCA</h3>
+                            </figcaption>
+                            <a href="projects/worca"></a>
+                        </figure>
 
-                                </figcaption>
-                                <a href="photo-project?id=<?php echo $title['set_id']; ?>"></a>
-                            </figure>
+                        <h3 class="client-title-mobile">UBC Ski and Board Club</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/ubcsnb/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">UBC Ski and Board Club</h3>
+                            </figcaption>
+                            <a href="projects/ubcsnb"></a>
+                        </figure>
 
-                            <!-- Hello future Jayden. For mobile, make the hover state constant and display none the description. -->
-                        <?php } ?>
+                        <h3 class="client-title-mobile">Broadcast Television</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/broadcast/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Broadcast Television</h3>
+                            </figcaption>
+                            <a href="projects/broadcast"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Alpine Armour</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/alpinearmour/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Alpine Armour</h3>
+                            </figcaption>
+                            <a href="projects/alpinearmour"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Sea to Sky Film Fest</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/stsfilmfest/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Sea to Sky Film Fest</h3>
+                            </figcaption>
+                            <a href="projects/stsfilmfest"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">SD48 Indigenous Teachings</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/sd48indigenousteachings/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">SD48 Indigenous Teachings</h3>
+                            </figcaption>
+                            <a href="projects/sd48indigenousteachings"></a>
+                        </figure>
+
+                        <!-- Hello future Jayden. For mobile, make the hover state constant and display none the description. -->
                     </div>
                 </section>
             </div>
         </div>
 
+        <!-- ADVENTURE GALLERY — filesystem-driven via render_gallery() -->
         <div id="adventure">
             <div class="header-banner">
                 <h2>Adventure</h2>
             </div>
 
-            <div class="pswp-gallery pswp-gallery--single-column grid" id="my-gallery">
-                <?php
-                    $result = $imgs->query('SELECT * FROM imgs WHERE set_id=99');
-                    while($img = $result->fetch_assoc()) {
-                ?>
-
-                <a href="<?php echo $img['photo_path']; echo $img['file'];?>"
-                    class="grid-item"
-                    data-pswp-width="<?php echo $img['width']; ?>"
-                    data-pswp-height="<?php echo $img['height']; ?>"
-                    target="_blank">
-                    <img src="<?php echo $img['photo_path']; echo $img['file'];?>" alt=""/>
-                </a>
-
-                <?php }; ?>
-            </div>
+            <?php render_gallery('gallery/adventure', '/gallery/adventure', 'adventure-gallery'); ?>
         </div>
 
+        <!-- LANDSCAPE GALLERY — filesystem-driven via render_gallery() -->
         <div id="landscape">
             <div class="header-banner">
                 <h2>Landscape</h2>
             </div>
 
-            <div class="pswp-gallery pswp-gallery--single-column grid landscape" id="my-gallery">
-                <?php
-                    $result = $imgs->query('SELECT * FROM imgs WHERE set_id=98');
-                    while($img = $result->fetch_assoc()) {
-                ?>
-
-                <a href="<?php echo $img['photo_path']; echo $img['file'];?>"
-                    class="grid-item"
-                    data-pswp-width="<?php echo $img['width']; ?>"
-                    data-pswp-height="<?php echo $img['height']; ?>"
-                    target="_blank">
-                    <img loading="lazy" src="<?php echo $img['photo_path']; echo $img['file'];?>" alt=""/>
-                </a>
-
-                <?php }; ?>
-            </div>
+            <?php render_gallery('gallery/landscape', '/gallery/landscape', 'landscape-gallery'); ?>
         </div>
-
-
 
         <div class="header-banner" id="caboose">
             <h3><a href="#commercial">Back to Top</a></h3>

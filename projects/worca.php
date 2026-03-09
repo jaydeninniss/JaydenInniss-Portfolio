@@ -10,7 +10,7 @@ $project = [
     'cover'       => '/gallery/projects/worca/cover.webp',
 ];
 
-include 'includes/gallery.php';
+include '../includes/gallery.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +44,7 @@ include 'includes/gallery.php';
     <!-- SEO -->
     <meta property="og:title" content="<?php echo htmlspecialchars($project['title']); ?> - Jayden Inniss">
     <meta property="og:type" content="website">
-    <meta property="og:URL" content="https://www.jaydeninniss.com/photo-project">
+    <meta property="og:URL" content="https://www.jaydeninniss.com/projects/worca">
     <meta property="og:image" content="https://www.jaydeninniss.com/media/logo/jaydeninniss_logo.svg">
     <meta property="og:description" content="Jayden Inniss is a sports/adventure photographer and videographer proudly based in Whistler, BC.">
     <meta name="robots" content="all">
@@ -77,8 +77,8 @@ include 'includes/gallery.php';
 </head>
 <body>
 
-    <?php include "./parts/header.php" ?>
-    <?php include "parts/hamburger.php" ?>
+    <?php include "../parts/header.php" ?>
+    <?php include "../parts/hamburger.php" ?>
 
     <main>
 
@@ -105,7 +105,7 @@ include 'includes/gallery.php';
         </div>
     </div>
 
-    <?php include "./parts/footer.php" ?>
+    <?php include "../parts/footer.php" ?>
 
     </main>
 

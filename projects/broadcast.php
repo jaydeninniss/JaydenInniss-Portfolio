@@ -1,3 +1,15 @@
+<?php
+// --- Project config ---
+$project = [
+    'title'       => 'Broadcast Television',
+    'description' => 'Camera operator and utility — Crankworx, Grey Cup, Luge World Cup.',
+    'folder'      => 'gallery/projects/broadcast',
+    'web_folder'  => '/gallery/projects/broadcast',
+    'cover'       => '/gallery/projects/broadcast/cover.webp',
+];
+
+include '../includes/gallery.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +59,21 @@
     <link rel="icon" type="image/x-icon" href="https://www.jaydeninniss.com/media/logo/jaydeninniss_logo.svg">
 
     <!-- End of SEO -->
+
+    <!-- PHOTOSWIPE PLUGIN -->
+    <script type="module">
+        import PhotoSwipeLightbox from '/plugins/photoswipe/photoswipe-lightbox.esm.js';
+        const options = {
+            gallery: '#project-gallery',
+            children: 'a',
+            pswpModule: () => import('/plugins/photoswipe/photoswipe.esm.js')
+        };
+        const lightbox = new PhotoSwipeLightbox(options);
+        lightbox.init();
+    </script>
+
+    <link rel="stylesheet" href="/plugins/photoswipe/photoswipe.css">
+    <!-- END PHOTOSWIPE PLUGIN -->
 </head>
 <body>
 
@@ -65,6 +92,9 @@
                         <h2>Experience as a Broadcast Camera Operator</h2>
                         <p>Since July 2023</p>
                 </div>
+
+                <!-- Project gallery — filesystem-driven via render_gallery() -->
+                <?php render_gallery($project['folder'], $project['web_folder'], 'project-gallery'); ?>
 
                 <h3 class="question"  id="first">Grey Cup Football Game 2024 - TVA Utility</h3>
                 <p class="answer">I worked with the broadcast team to cover the 2024 Grey Cup held at BC Place. I worked for Dome Productions + TSN. </p>
