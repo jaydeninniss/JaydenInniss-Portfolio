@@ -57,7 +57,7 @@
     <div id="home-hero">
         <div id="home-hero-4"></div>
         <div id="home-hero-text"><p>JAYDEN INNISS</p>
-        <h1>Photography | Videography | Multimedia Design</h1></div>
+        <h1>Photography | Videography | Broadcast Camera Operator</h1></div>
         <div id="home-hero-3"></div>
         <div id="home-hero-2"></div>
         <div id="home-hero-1"></div>
