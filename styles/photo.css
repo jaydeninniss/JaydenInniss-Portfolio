@@ -30,7 +30,7 @@ main {
 }
 
 h3 {
-  font-size: unset;
+  font-size: 18px;
 }
 
 .content-container {
@@ -394,6 +394,7 @@ h3:hover {
 
 .photo-hub-grid {
   width: 100vw;
+  padding-top: 90px;
 }
 
 .photo-hub-row {
@@ -402,23 +403,27 @@ h3:hover {
   width: 100%;
   gap: 5px;
   padding: 5px;
+  height: 90vh
 }
 
 .photo-hub-row .figure {
   flex-basis: unset;
   width: 100%;
-  min-height: 42vw;
+  min-height: 28vw;
   margin: 0;
 }
 
-/* Always show label on mobile (no hover on touch devices) */
-@media screen and (max-width: 1199px) {
-  .photo-hub-row .figure figcaption {
-    opacity: 1;
-    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
-    justify-content: flex-end;
-    padding-bottom: 16px;
-  }
+/* Hub cards — always in hover state: dimmed image, text always visible */
+.photo-hub-row .figure img {
+  opacity: 0.5;
+}
+
+.photo-hub-row .figure figcaption {
+  opacity: 1 !important;
+  transition: none !important;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+  justify-content: flex-end;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 1200px) {
