@@ -285,6 +285,14 @@ h3 {
             flex-direction: column;
             height: 200px;
             width: 100vw;
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: darken;
+            transition: all 0.2s ease;
+
+            @media screen and (min-width: 1200px) {
+                background-color: rgba(0,0,0,0.6);
+            }
 
             @media screen and (min-width: 1200px) {
                 width: 100vw;
@@ -294,38 +302,19 @@ h3 {
 
         #adventure {
             background-image: url("../media/img/banners/adventure-banner.webp");
-            background-position: center;
-            background-size: cover;
-            background-blend-mode: darken;
-            transition: all 0.2s ease;
-
-            @media screen and (min-width: 1200px) {
-                background-color: rgba(0,0,0,0.6);
-            }
         }
 
-        #landscape {
+        #lifestylebrand {
+            background-image: url("../media/img/banners/adventure-banner.webp");
+        }
+
+        #sports {
             background-image: url("../media/img/banners/landscape-banner.webp");
-            background-position: center;
-            background-size: cover;
-            background-blend-mode: darken;
-            transition: all 0.2s ease;
 
-            @media screen and (min-width: 1200px) {
-                background-color: rgba(0,0,0,0.6);
-            }
         }
 
-        #commercial {
+        #events {
             background-image: url("../media/img/banners/commercial-banner.webp");
-            background-position: center;
-            background-size: cover;
-            background-blend-mode: darken;
-            transition: all 0.2s ease;
-
-            @media screen and (min-width: 1200px) {
-                background-color: rgba(0,0,0,0.6);
-            }
         }
 
         .seemore-container {
@@ -354,13 +343,17 @@ h3 {
             }
         }
 
-        #commercial-seemore {
-            margin-left: 320px;
+        #lifestylebrand-seemore {
+            margin-left: 485px;
         }
+        #events-seemore, #sports-seemore{
+            margin-left: 130px;
+        }
+
     }
 
     .photo-banners:hover > .seemore-container > .seemore-text {
-        transform: translateY(-15px);
+        transform: translateY(-10px);
     }
 
     #adventure:hover {
@@ -368,12 +361,17 @@ h3 {
         background-blend-mode: darken;
     }
 
-    #landscape:hover {
+    #events:hover {
         background-color: transparent;
         background-blend-mode: darken;
     }
 
-    #commercial:hover {
+    #sports:hover {
+        background-color: transparent;
+        background-blend-mode: darken;
+    }
+
+    #lifestylebrand:hover {
         background-color: transparent;
         background-blend-mode: darken;
     }
