@@ -147,6 +147,114 @@
                             <a href="projects/sd48indigenousteachings"></a>
                         </figure>
 
+                        <h3 class="client-title-mobile">Crankworx</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/crankworx/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Crankworx</h3>
+                            </figcaption>
+                            <a href="projects/crankworx"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Foon Skis</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/foon/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Foon Skis</h3>
+                            </figcaption>
+                            <a href="projects/foon"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Fungus Among Us</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/fungus/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Fungus Among Us</h3>
+                            </figcaption>
+                            <a href="projects/fungus"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Knolly Bikes</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/knolly/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Knolly Bikes</h3>
+                            </figcaption>
+                            <a href="projects/knolly"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Mekong</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/mekong/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Mekong</h3>
+                            </figcaption>
+                            <a href="projects/mekong"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Green River Motocross</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/mx/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Green River Motocross</h3>
+                            </figcaption>
+                            <a href="projects/mx"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Nicklaus North Golf Course</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/nicknorth/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Nicklaus North Golf Course</h3>
+                            </figcaption>
+                            <a href="projects/nicknorth"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Nordic Championships</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/nordic_champs/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Nordic Championships</h3>
+                            </figcaption>
+                            <a href="projects/nordic_champs"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Partners in Tourism</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/pit/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Partners in Tourism</h3>
+                            </figcaption>
+                            <a href="projects/pit"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Treeline Aerial</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/treeline/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Treeline Aerial</h3>
+                            </figcaption>
+                            <a href="projects/treeline"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">VRCA Awards</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/vrca/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">VRCA Awards</h3>
+                            </figcaption>
+                            <a href="projects/vrca"></a>
+                        </figure>
+
+                        <h3 class="client-title-mobile">Whistler Real Estate Company</h3>
+                        <figure class="figure client">
+                            <img src="/gallery/projects/wrec/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3 class="client-title-desktop">Whistler Real Estate Company</h3>
+                            </figcaption>
+                            <a href="projects/wrec"></a>
+                        </figure>
+
                         <!-- Hello future Jayden. For mobile, make the hover state constant and display none the description. -->
                     </div>
                 </section>
