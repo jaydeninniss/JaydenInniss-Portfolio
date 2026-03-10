@@ -87,7 +87,7 @@ include '../includes/gallery.php';
     <main>
         <!-- Header Img -->
         <div class="hero">
-            <img loading="lazy" src="../media/img/clients/ubcsnb/jaydeninniss_ubcsnb_cover.webp" alt="UBC Ski and Board Logo">
+            <img src="../gallery/projects/ubcsnb/cover.webp" alt="UBC Ski and Board Logo">
         </div>
         <!-- END Header Img -->
 

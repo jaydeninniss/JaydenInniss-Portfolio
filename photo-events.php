@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events Photography - Jayden Inniss</title>
-
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QPYBLBF2QD"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,16 +12,10 @@
     gtag('js', new Date());
     gtag('config', 'G-QPYBLBF2QD');
     </script>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- SEO -->
     <meta property="og:title" content="Events Photography - Jayden Inniss">
     <meta property="og:type" content="website">
     <meta property="og:URL" content="https://www.jaydeninniss.com/photo-events">
@@ -34,9 +26,6 @@
     <meta name="description" content="Jayden Inniss is a sports/adventure photographer and videographer proudly based in Whistler, BC.">
     <meta name="keywords" content="Events Photography, Jayden Inniss, Whistler, Event Photographer">
     <link rel="icon" type="image/x-icon" href="https://www.jaydeninniss.com/media/logo/jaydeninniss_logo.svg">
-    <!-- End of SEO -->
-
-    <!-- PHOTOSWIPE PLUGIN -->
     <script type="module">
         import PhotoSwipeLightbox from '/plugins/photoswipe/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -47,12 +36,8 @@
         lightbox.init();
     </script>
     <link rel="stylesheet" href="/plugins/photoswipe/photoswipe.css">
-    <!-- END PHOTOSWIPE PLUGIN -->
-
-    <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/photo.css">
-
 </head>
 <body>
 
@@ -60,53 +45,83 @@
     <?php include "parts/hamburger.php" ?>
 
     <main>
-
         <div class="content-container">
 
             <!-- CLIENT PROJECTS -->
             <div id="commercial">
                 <div class="header-banner">
                     <h2>Events</h2>
+                    <p>Featured Projects</p>
                 </div>
-
                 <div class="grid">
                     <section class="section-6">
                         <div class="row">
 
-                            <h3 class="client-title-mobile">VRCA Awards</h3>
+                            <h3 class="client-title-mobile">Nicklaus North Golf Course</h3>
                             <figure class="figure client">
-                                <img src="/gallery/projects/vrca/cover.webp" loading="lazy">
-                                <figcaption>
-                                    <h3 class="client-title-desktop">VRCA Awards</h3>
-                                </figcaption>
-                                <a href="projects/vrca"></a>
+                                <img src="/gallery/projects/nicknorth/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">Nicklaus North Golf Course</h3></figcaption>
+                                <a href="projects/nicknorth"></a>
+                            </figure>
+                            
+
+
+
+
+                            <h3 class="client-title-mobile">Whistler Chamber of Commerce</h3>
+                            <figure class="figure client">
+                                <img src="/gallery/projects/wcc/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">Whistler Chamber of Commerce</h3></figcaption>
+                                <a href="projects/wcc"></a>
                             </figure>
 
-                            <h3 class="client-title-mobile">Sea to Sky Film Fest</h3>
+                            <h3 class="client-title-mobile">Whistler Secondary Graduation</h3>
                             <figure class="figure client">
-                                <img src="/gallery/projects/stsfilmfest/cover.webp" loading="lazy">
-                                <figcaption>
-                                    <h3 class="client-title-desktop">Sea to Sky Film Fest</h3>
-                                </figcaption>
-                                <a href="projects/stsfilmfest"></a>
+                                <img src="/gallery/projects/wssgrad/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">Whistler Secondary Graduation</h3></figcaption>
+                                <a href="projects/wssgrad"></a>
                             </figure>
 
                             <h3 class="client-title-mobile">Partners in Tourism</h3>
                             <figure class="figure client">
                                 <img src="/gallery/projects/pit/cover.webp" loading="lazy">
-                                <figcaption>
-                                    <h3 class="client-title-desktop">Partners in Tourism</h3>
-                                </figcaption>
+                                <figcaption><h3 class="client-title-desktop">Partners in Tourism</h3></figcaption>
                                 <a href="projects/pit"></a>
                             </figure>
 
-                            <h3 class="client-title-mobile">Broadcast Television</h3>
+                            <h3 class="client-title-mobile">Mekong Grand Opening</h3>
                             <figure class="figure client">
-                                <img src="/gallery/projects/broadcast/cover.webp" loading="lazy">
-                                <figcaption>
-                                    <h3 class="client-title-desktop">Broadcast Television</h3>
-                                </figcaption>
-                                <a href="projects/broadcast"></a>
+                                <img src="/gallery/projects/mekong/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">Mekong Grand Opening</h3></figcaption>
+                                <a href="projects/mekong"></a>
+                            </figure>
+
+                            <h3 class="client-title-mobile">Balam</h3>
+                            <figure class="figure client">
+                                <img src="/gallery/projects/balam/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">Balam</h3></figcaption>
+                                <a href="projects/balam"></a>
+                            </figure>
+
+                            <h3 class="client-title-mobile">VRCA Awards</h3>
+                            <figure class="figure client">
+                                <img src="/gallery/projects/vrca/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">VRCA Awards</h3></figcaption>
+                                <a href="projects/vrca"></a>
+                            </figure>
+
+                            <h3 class="client-title-mobile">Whistler Writers Festival</h3>
+                            <figure class="figure client">
+                                <img src="/gallery/projects/wwf/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">Whistler Writers Festival</h3></figcaption>
+                                <a href="projects/wwf"></a>
+                            </figure>
+
+                            <h3 class="client-title-mobile">UBC Ski and Board Club</h3>
+                            <figure class="figure client">
+                                <img src="/gallery/projects/ubcsnb/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">UBC Ski and Board Club</h3></figcaption>
+                                <a href="projects/ubcsnb"></a>
                             </figure>
 
                         </div>
@@ -119,7 +134,6 @@
                 <div class="header-banner">
                     <h2>Gallery</h2>
                 </div>
-
                 <?php render_gallery('gallery/events', '/gallery/events', 'events-gallery'); ?>
             </div>
 
@@ -128,9 +142,7 @@
             </div>
 
         </div>
-
         <?php include "./parts/footer.php" ?>
-
     </main>
 
     <script src="/js/scrollReveal.js"></script>

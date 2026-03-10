@@ -77,7 +77,7 @@
             
         <div class="photography">
             <div class="photo-banner-section">
-                <a href="photo#events">
+                <a href="photo-events">
                     <div class="photo-banners" id="events">
                         <h3>EVENTS</h3>
                         <div class="seemore-container" id="events-seemore">
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="photo#sports">
+                <a href="photo-sports">
                     <div class="photo-banners" id="sports">
                         <h3>SPORTS</h3>
                         <div class="seemore-container" id="sports-seemore">
@@ -93,7 +93,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="photo#lifestylebrand">
+                <a href="photo-lifestylebrand">
                     <div class="photo-banners" id="lifestylebrand">
                         <h3>LIFESTYLE/BRAND</h3>
                         <div class="seemore-container" id="lifestylebrand-seemore">
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="photo#adventure">
+                <a href="photo-adventure">
                     <div class="photo-banners" id="adventure">
                         <h3>ADVENTURE</h3>
                         <div class="seemore-container" id="adventure-seemore">

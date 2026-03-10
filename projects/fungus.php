@@ -1,7 +1,7 @@
 <?php
 $project = [
     'title'       => 'Fungus Among Us',
-    'description' => 'Photography for Fungus Among Us.',
+    'description' => 'Whistler Naturalists is a non-profit organization dedicated to educating the public about the natural world and promoting conservation efforts in the Whistler area. I joined them for Fungus Among Us 2024 and 2025!',
     'folder'      => 'gallery/projects/fungus',
     'web_folder'  => '/gallery/projects/fungus',
     'cover'       => '/gallery/projects/fungus/cover.webp',

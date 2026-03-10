@@ -305,16 +305,16 @@ h3 {
         }
 
         #lifestylebrand {
-            background-image: url("../media/img/banners/adventure-banner.webp");
+            background-image: url("../gallery/lifestylebrand/rmu-41.webp");
         }
 
         #sports {
-            background-image: url("../media/img/banners/landscape-banner.webp");
-
+            background-image: url("../gallery/sports/ski-39.webp");
         }
 
         #events {
-            background-image: url("../media/img/banners/commercial-banner.webp");
+            background-image: url("../gallery/events/cover.webp");
+            filter: grayscale(100%);
         }
 
         .seemore-container {
