@@ -1,0 +1,119 @@
+=====================================
+  JAYDEN INNISS SITE — GALLERY CHEAT SHEET
+=====================================
+
+
+--- ADDING PHOTOS TO A GALLERY ---
+
+Just drop image files into the right folder. That's it.
+The gallery auto-generates from the filesystem — no database, no code changes.
+
+Supported formats: .jpg  .jpeg  .webp  .png
+
+Folders:
+  gallery/adventure/                   → photo.php Adventure section
+  gallery/landscape/                   → photo.php Landscape section
+  gallery/projects/worca/              → projects/worca.php
+  gallery/projects/ubcsnb/             → projects/ubcsnb.php
+  gallery/projects/broadcast/          → projects/broadcast.php
+  gallery/projects/alpinearmour/       → projects/alpinearmour.php
+  gallery/projects/stsfilmfest/        → projects/stsfilmfest.php
+  gallery/projects/sd48indigenousteachings/ → projects/sd48indigenousteachings.php
+
+
+--- CONTROLLING IMAGE ORDER ---
+
+Images are sorted A→Z by filename.
+Use number prefixes to set the order manually:
+
+  01_podium.webp
+  02_action.webp
+  03_crowd.webp
+
+Without prefixes, they sort alphabetically by name (which may not be what you want).
+
+
+--- COVER IMAGES ---
+
+Each project needs a cover image for the Client Projects grid on photo.php.
+Name it exactly:  cover.webp
+Place it in the project's gallery folder, e.g.:
+
+  gallery/projects/worca/cover.webp
+
+If cover.webp is missing the card will show a broken image — it won't crash anything.
+
+
+--- WIDE vs TALL images ---
+
+The gallery function auto-detects landscape photos.
+If width ÷ height > 1.3  →  the image gets a CSS class of "wide" (spans more columns).
+You don't need to do anything — it's automatic.
+
+
+--- CREATING A NEW PROJECT PAGE ---
+
+1. Duplicate:   projects/worca.php
+2. Rename it:   projects/yourproject.php
+3. Edit the config block at the very top of the file (lines 2–9):
+
+   $project = [
+       'title'       => 'Your Project Name',
+       'description' => 'One line description.',
+       'folder'      => 'gallery/projects/yourproject',
+       'web_folder'  => '/gallery/projects/yourproject',
+       'cover'       => '/gallery/projects/yourproject/cover.webp',
+   ];
+
+4. Create the folder:   gallery/projects/yourproject/
+5. Drop images in.
+6. Add a .gitkeep file to the folder so git tracks it when empty.
+7. Add a <figure> card for it in photo.php (copy one of the existing ones).
+
+That's the whole process. No database, no IDs, no nothing.
+
+
+--- ADDING THE NEW PROJECT TO photo.php ---
+
+Open photo.php and find the "Client Projects" section.
+Copy one of the existing <figure> blocks and update the 3 values:
+
+  <h3 class="client-title-mobile">Your Project Name</h3>
+  <figure class="figure client">
+      <img src="/gallery/projects/yourproject/cover.webp" loading="lazy">
+      <figcaption>
+          <h3 class="client-title-desktop">Your Project Name</h3>
+      </figcaption>
+      <a href="projects/yourproject"></a>
+  </figure>
+
+
+--- PREV / NEXT LINKS ---
+
+In projects/worca.php (and any project pages you duplicate from it),
+the Prev / Next links at the bottom are currently set to "#" as placeholders.
+
+To wire them up, edit the caboose div at the bottom of the file:
+
+  <h3 id="prev-project"><a href="../projects/ubcsnb">← Prev</a></h3>
+  <h3 id="next-project"><a href="../projects/broadcast">Next →</a></h3>
+
+
+--- FILE RULES (don't touch these) ---
+
+  styles/         — CSS only, don't edit
+  js/             — scripts only, don't edit
+  parts/          — header, footer, hamburger — don't edit
+  db/             — left in place but no longer used by photo pages
+  plugins/        — PhotoSwipe lives here, don't touch
+
+
+--- KEY FILES ---
+
+  includes/gallery.php     — the render_gallery() function (single source of truth)
+  photo.php                — main photo page (adventure + landscape + project cards)
+  photo-project.php        — generic template (not really used, worca.php is the real one)
+  projects/worca.php       — template to duplicate for new projects
+
+
+=====================================

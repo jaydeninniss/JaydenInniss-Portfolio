@@ -1,3 +1,4 @@
+<?php include 'includes/gallery.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,16 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- LENIS - SMOOTH SCROLL -->
-    <!-- <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script> 
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css"> -->
 
     <!-- SEO -->
     <meta property="og:title" content="Photo - Jayden Inniss">
@@ -44,21 +37,6 @@
     <link rel="icon" type="image/x-icon" href="https://www.jaydeninniss.com/media/logo/jaydeninniss_logo.svg">
     <!-- End of SEO -->
 
-    <!-- PHOTOSWIPE PLUGIN -->
-    <script type="module">
-        import PhotoSwipeLightbox from '/plugins/photoswipe/photoswipe-lightbox.esm.js';
-        const options = {
-        gallery: '#my-gallery',
-        children: 'a',
-        pswpModule: () => import('/plugins/photoswipe/photoswipe.esm.js')
-        };
-        const lightbox = new PhotoSwipeLightbox(options);
-        lightbox.init();
-    </script>
-
-    <link rel="stylesheet" href="/plugins/photoswipe/photoswipe.css">
-        <!-- END PHOTOSWIPE PLUGIN -->
-
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/photo.css">
@@ -68,106 +46,60 @@
 
     <?php include "./parts/header.php" ?>
     <?php include "parts/hamburger.php" ?>
-    <?php include 'db/connect.php';?>
-
-    <?php 
-        $result2 = $imgs->query('SELECT * FROM sets');
-    ?>
 
     <main>
 
-    <!-- HERO IMAGE -->
-    <!-- <div id="photo-hero">
-        <div id="photo-hero-bg"></div>
-    </div> -->
-    <!-- END HERO IMAGE -->
+        <!-- HERO IMAGE -->
+        <!-- <div id="photo-hero">
+            <img src="/gallery/photo-hero.webp" alt="">
+        </div> -->
+        <!-- END HERO IMAGE -->
 
+        <div class="content-container">
 
-
-    <div class="content-container">
-
-        <div id="commercial">
-            <div class="header-banner">
-                <h2>Client Projects</h2>
-            </div>
-
-            <div class="grid">
+            <div class="photo-hub-grid">
                 <section class="section-6">
-                    <div class="row">
+                    <div class="photo-hub-row">
 
-                        <?php while($title = $result2->fetch_assoc()) { ?>
-                            <h3 class="client-title-mobile"><?php echo $title['set_title']; ?></h3>
-                            <figure class="figure client">
-                                <img src="<?php echo $title['set_cover']; ?>">
-                                <figcaption>
-                                    <h3 class="client-title-desktop"><?php echo $title['set_title']; ?></h3>
+                        <figure class="figure">
+                            <img src="/gallery/sports/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3>Sports</h3>
+                            </figcaption>
+                            <a href="photo-sports"></a>
+                        </figure>
 
-                                </figcaption>
-                                <a href="photo-project?id=<?php echo $title['set_id']; ?>"></a>
-                            </figure>
+                        <figure class="figure">
+                            <img src="/gallery/events/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3>Events</h3>
+                            </figcaption>
+                            <a href="photo-events"></a>
+                        </figure>
 
-                            <!-- Hello future Jayden. For mobile, make the hover state constant and display none the description. -->
-                        <?php } ?>
+                        <figure class="figure">
+                            <img src="/gallery/lifestylebrand/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3>Lifestyle &amp; Brand</h3>
+                            </figcaption>
+                            <a href="photo-lifestylebrand"></a>
+                        </figure>
+
+                        <figure class="figure">
+                            <img src="/gallery/adventure/cover.webp" loading="lazy">
+                            <figcaption>
+                                <h3>Adventure</h3>
+                            </figcaption>
+                            <a href="photo-adventure"></a>
+                        </figure>
+
                     </div>
                 </section>
             </div>
+
         </div>
 
-        <div id="adventure">
-            <div class="header-banner">
-                <h2>Adventure</h2>
-            </div>
-
-            <div class="pswp-gallery pswp-gallery--single-column grid" id="my-gallery">
-                <?php
-                    $result = $imgs->query('SELECT * FROM imgs WHERE set_id=99');
-                    while($img = $result->fetch_assoc()) {
-                ?>
-
-                <a href="<?php echo $img['photo_path']; echo $img['file'];?>"
-                    class="grid-item"
-                    data-pswp-width="<?php echo $img['width']; ?>"
-                    data-pswp-height="<?php echo $img['height']; ?>"
-                    target="_blank">
-                    <img src="<?php echo $img['photo_path']; echo $img['file'];?>" alt=""/>
-                </a>
-
-                <?php }; ?>
-            </div>
-        </div>
-
-        <div id="landscape">
-            <div class="header-banner">
-                <h2>Landscape</h2>
-            </div>
-
-            <div class="pswp-gallery pswp-gallery--single-column grid landscape" id="my-gallery">
-                <?php
-                    $result = $imgs->query('SELECT * FROM imgs WHERE set_id=98');
-                    while($img = $result->fetch_assoc()) {
-                ?>
-
-                <a href="<?php echo $img['photo_path']; echo $img['file'];?>"
-                    class="grid-item"
-                    data-pswp-width="<?php echo $img['width']; ?>"
-                    data-pswp-height="<?php echo $img['height']; ?>"
-                    target="_blank">
-                    <img loading="lazy" src="<?php echo $img['photo_path']; echo $img['file'];?>" alt=""/>
-                </a>
-
-                <?php }; ?>
-            </div>
-        </div>
-
-
-
-        <div class="header-banner" id="caboose">
-            <h3><a href="#commercial">Back to Top</a></h3>
-        </div>
-
-    </div>
-
-    <?php include "./parts/footer.php" ?>
+        <?php include "./parts/footer.php" ?>
 
     </main>
 

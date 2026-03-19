@@ -1,0 +1,50 @@
+- Drop down photo menu
+- Fill in photo pages
+- Back button on photosubpages
+- Next and back project buttons are not active yet... #
+- Make titles on photo page constant (OR photoshop?) nah
+- Add a title on photo.php or description or idk maybe remove hero image and make it a bg?
+- Emma branding shoot to add
+
+
+
+
+For each of the sub pages under the project page, please ensure these client/project cards are in the corresponding page. Let me know if you have questions or if any are unclear. Do not change the css or anything, just move them around and add the missing ones.
+
+
+1. SPORTS
+FIS Nordic Championships
+Foon Skis
+Knolly Bikes
+Green River Motocross
+Polygon Bikes
+Oyuki
+RMU Athletes
+WORCA
+Crankworx
+
+
+2. LIFESTYLE & BRAND
+Maxine + Connie Arc'teryx shoot
+Emma Englund Brand Shoot
+Community Futures Howe Sound
+Whistler Real Estate Co.
+Whistler Sliding Centre
+UBC Ski and Board
+False Creek Friends
+Whistler Naturalists
+Treeline Aerial
+
+
+3. EVENTS
+VRCA Awards
+Partners in Tourism
+Whistler Chamber of Commerce
+Nicklaus North Golf Course
+Mekong Grand Opening
+Balam
+Whistler Secondary Graduation Ceremony
+
+
+4. ADVENTURE
+None, only the gallery, no section for project cards.

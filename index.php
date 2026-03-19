@@ -57,7 +57,7 @@
     <div id="home-hero">
         <div id="home-hero-4"></div>
         <div id="home-hero-text"><p>JAYDEN INNISS</p>
-        <h1>Photography | Videography | Multimedia Design</h1></div>
+        <h1>Photography | Videography | Broadcast Camera Operator</h1></div>
         <div id="home-hero-3"></div>
         <div id="home-hero-2"></div>
         <div id="home-hero-1"></div>
@@ -77,26 +77,34 @@
             
         <div class="photography">
             <div class="photo-banner-section">
-                <a href="photo#adventure">
+                <a href="photo-events">
+                    <div class="photo-banners" id="events">
+                        <h3>EVENTS</h3>
+                        <div class="seemore-container" id="events-seemore">
+                            <p class="seemore-text">View Imagery →</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="photo-sports">
+                    <div class="photo-banners" id="sports">
+                        <h3>SPORTS</h3>
+                        <div class="seemore-container" id="sports-seemore">
+                            <p class="seemore-text">View Imagery →</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="photo-lifestylebrand">
+                    <div class="photo-banners" id="lifestylebrand">
+                        <h3>LIFESTYLE/BRAND</h3>
+                        <div class="seemore-container" id="lifestylebrand-seemore">
+                            <p class="seemore-text">View Imagery →</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="photo-adventure">
                     <div class="photo-banners" id="adventure">
                         <h3>ADVENTURE</h3>
-                        <div class="seemore-container">
-                            <p class="seemore-text">View Imagery →</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="photo#landscape">
-                    <div class="photo-banners" id="landscape">
-                        <h3>LANDSCAPE</h3>
-                        <div class="seemore-container">
-                            <p class="seemore-text">View Imagery →</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="photo#commercial">
-                    <div class="photo-banners" id="commercial">
-                        <h3>COMMERCIAL</h3>
-                        <div class="seemore-container" id="commercial-seemore">
+                        <div class="seemore-container" id="adventure-seemore">
                             <p class="seemore-text">View Imagery →</p>
                         </div>
                     </div>
@@ -147,9 +155,9 @@
 
         <a href="project">
             <div class="project">
-                <h3 id="project-header">RECENT PROJECTS</h3>
+                <h3 id="project-header">CASE STUDIES</h3>
                 <div class="seemore-container">
-                    <p class="seemore-text">See All Projects →</p>
+                    <p class="seemore-text">Read Featured Projects →</p>
                 </div>
             </div>
         </a>

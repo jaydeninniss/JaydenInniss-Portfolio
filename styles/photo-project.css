@@ -91,12 +91,13 @@
     #prev-project, #next-project, #back-btn {
         transition: all 0.2s ease;
     }
-    
+
+    h3:hover {
+        transform: none;
+    }
+
     #prev-project:hover {
         transform: translateX(-15px);
-    }
-    #all-project:hover {
-        transform: translateY(-15px);
     }
     #next-project:hover {
         transform: translateX(15px);

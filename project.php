@@ -56,7 +56,7 @@
     <!-- HERO IMAGE -->
     <div id="newmedia-hero">
         <div id="newmedia-hero-bg"></div>
-        <div id="newmedia-hero-text"><p id='hero'>PROJECTS</p></div>
+        <div id="newmedia-hero-text"><p id='hero'>CASE STUDIES</p></div>
         <div id="newmedia-hero-foreground"></div>
     </div>
     <!-- END HERO IMAGE -->
