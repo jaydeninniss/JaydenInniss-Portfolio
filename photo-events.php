@@ -124,6 +124,13 @@
                                 <a href="projects/ubcsnb"></a>
                             </figure>
 
+                            <h3 class="client-title-mobile">John Summit Experts Only 2026</h3>
+                            <figure class="figure client">
+                                <img src="/gallery/projects/johnsummitexpertsonly/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">John Summit Experts Only 2026</h3></figcaption>
+                                <a href="projects/johnsummit"></a>
+                            </figure>
+
                         </div>
                     </section>
                 </div>
