@@ -164,12 +164,88 @@
 
     </div>  
 
+    <!-- METHODOLOGY -->
+    <section class="methodology">
+        <div class="methodology-header">
+            <p class="methodology-label">How I Work</p>
+            <h2>My Process</h2>
+        </div>
+
+        <div class="method-step" style="--i:0">
+            <div class="method-inner">
+                <span class="method-num">01</span>
+                <div class="method-body">
+                    <h3>Initiation</h3>
+                    <p>Placeholder — getting to know you, your brand, and your goals before anything else begins.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="method-step" style="--i:1">
+            <div class="method-inner">
+                <span class="method-num">02</span>
+                <div class="method-body">
+                    <h3>Pre-Production</h3>
+                    <p>Placeholder — planning every detail of the shoot, from locations and shot lists to equipment and scheduling.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="method-step" style="--i:2">
+            <div class="method-inner">
+                <span class="method-num">03</span>
+                <div class="method-body">
+                    <h3>Production</h3>
+                    <p>Placeholder — executing the shoot with energy, precision, and adaptability to capture the best possible content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="method-step" style="--i:3">
+            <div class="method-inner">
+                <span class="method-num">04</span>
+                <div class="method-body">
+                    <h3>Post-Production</h3>
+                    <p>Placeholder — editing, colour grading, and refining every frame until the final product exceeds expectations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="method-step" style="--i:4">
+            <div class="method-inner">
+                <span class="method-num">05</span>
+                <div class="method-body">
+                    <h3>Project Closeout</h3>
+                    <p>Placeholder — delivering final files, gathering feedback, and making sure you walk away completely satisfied.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END METHODOLOGY -->
+
     <div class="bio-video">
         <canvas id="logo-animation" />
     </div>
 
     <?php include "parts/footer.php" ?>
 
+    <script>
+        // Methodology — scale + fade previous steps as next card arrives
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray('.method-step').forEach((step) => {
+            gsap.to(step, {
+                scale: 0.94,
+                opacity: 0.5,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: step,
+                    start: 'top top+=80',
+                    end: 'bottom top+=120',
+                    scrub: true,
+                }
+            });
+        });
+    </script>
     <script src="js/home.js"></script>
     <script src="/js/parallaxhero/parallaxhero_home.js"></script>
     <script src="/js/lenis.js"></script>

@@ -5,7 +5,7 @@
     background-color: #222922;
     justify-content: start;
     position: fixed;
-    z-index: 2;
+    z-index: 200;
 }
 
 #nav-logo {

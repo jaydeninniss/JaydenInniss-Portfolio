@@ -517,6 +517,111 @@ h3 {
     transform: translateY(-15px);
 }
 
+/* -------------------------------------------------------------------- */
+/* METHODOLOGY                                                           */
+/* -------------------------------------------------------------------- */
+
+.methodology {
+    background: var(--jigrey);
+    padding-bottom: 80px;
+}
+
+.methodology-header {
+    position: sticky;
+    top: 90px;
+    z-index: 100;
+    background: var(--jigrey);
+    padding: 24px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    @media screen and (min-width: 1200px) {
+        padding: 28px 120px;
+    }
+
+    .methodology-label {
+        color: var(--jilightgreen);
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+    }
+
+    h2 {
+        font-family: Anybody, sans-serif;
+        font-size: clamp(36px, 6vw, 72px);
+        font-weight: 800;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.method-step {
+    position: sticky;
+    top: calc(170px + var(--i) * 48px);
+    background: var(--jigrey);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 36px 40px 52px;
+    z-index: calc(10 + var(--i));
+    transform-origin: top center;
+
+    @media screen and (min-width: 1200px) {
+        padding: 48px 120px 72px;
+    }
+}
+
+.method-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 1000px;
+
+    @media screen and (min-width: 1200px) {
+        gap: 56px;
+        align-items: center;
+    }
+}
+
+.method-num {
+    font-family: Anybody, sans-serif;
+    font-size: clamp(56px, 8vw, 110px);
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.18);
+    line-height: 1;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.method-body {
+    padding-top: 8px;
+
+    h3 {
+        font-family: Anybody, sans-serif;
+        font-size: clamp(22px, 3.5vw, 42px);
+        font-weight: 700;
+        color: white;
+        margin: 0 0 10px;
+        transition: none;
+    }
+
+    h3:hover {
+        transform: none;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.5);
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: clamp(14px, 1.2vw, 17px);
+        font-weight: 400;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+/* -------------------------------------------------------------------- */
+
 .bio-video {
     display: flex;
     justify-content: center;
