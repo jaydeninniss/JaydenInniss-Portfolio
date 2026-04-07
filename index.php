@@ -70,7 +70,7 @@
                 <img src="./media/img/jayden24profilepic.webp" alt="Jayden Inniss Profile Picture" id="profile-pic" loading="lazy">
             </div>
             <div class="about-right">
-                <h1>Jayden Inniss<span id='jaydenstitle'><br>Photographer, Videographer, Multimedia Designer</span></h1>
+                <h1>Jayden Inniss<span id='jaydenstitle'><br>TAGLINE</span></h1>
                 <p>Over the past five years, I have built a freelance business, collaborating with various companies and organizations to produce photo/video marketing content. Recently, I have worked as a camera operator for sports broadcast events. <br><br>With proficiency in both extreme sports and digital marketing, I create specialized marketing content tailored to outdoor enthusiasts like myself. I always make room in my pack for my camera!</p>
             </div>
         </div>
@@ -153,14 +153,14 @@
             </div>
         </a>
 
-        <a href="project">
+        <!-- <a href="project">
             <div class="project">
                 <h3 id="project-header">CASE STUDIES</h3>
                 <div class="seemore-container">
                     <p class="seemore-text">Read Featured Projects →</p>
                 </div>
             </div>
-        </a>
+        </a> -->
 
     </div>  
 

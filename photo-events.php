@@ -63,10 +63,13 @@
                                 <figcaption><h3 class="client-title-desktop">Nicklaus North Golf Course</h3></figcaption>
                                 <a href="projects/nicknorth"></a>
                             </figure>
-                            
 
-
-
+                            <h3 class="client-title-mobile">John Summit Experts Only 2026</h3>
+                            <figure class="figure client">
+                                <img src="/gallery/projects/johnsummitexpertsonly/cover.webp" loading="lazy">
+                                <figcaption><h3 class="client-title-desktop">John Summit Experts Only 2026</h3></figcaption>
+                                <a href="projects/johnsummit"></a>
+                            </figure>
 
                             <h3 class="client-title-mobile">Whistler Chamber of Commerce</h3>
                             <figure class="figure client">
@@ -122,13 +125,6 @@
                                 <img src="/gallery/projects/ubcsnb/cover.webp" loading="lazy">
                                 <figcaption><h3 class="client-title-desktop">UBC Ski and Board Club</h3></figcaption>
                                 <a href="projects/ubcsnb"></a>
-                            </figure>
-
-                            <h3 class="client-title-mobile">John Summit Experts Only 2026</h3>
-                            <figure class="figure client">
-                                <img src="/gallery/projects/johnsummitexpertsonly/cover.webp" loading="lazy">
-                                <figcaption><h3 class="client-title-desktop">John Summit Experts Only 2026</h3></figcaption>
-                                <a href="projects/johnsummit"></a>
                             </figure>
 
                         </div>
