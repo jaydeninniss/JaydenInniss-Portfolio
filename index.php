@@ -176,7 +176,7 @@
                 <span class="method-num">01</span>
                 <div class="method-body">
                     <h3>Initiation</h3>
-                    <p>Placeholder — getting to know you, your brand, and your goals before anything else begins.</p>
+                    <p>Before anything else, let's just talk. We'll get to know each other, agree on scope and pricing, and get a contract signed so we're both set up for a smooth project.</p>
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@
                 <span class="method-num">02</span>
                 <div class="method-body">
                     <h3>Pre-Production</h3>
-                    <p>Placeholder — planning every detail of the shoot, from locations and shot lists to equipment and scheduling.</p>
+                    <p>We'll jump on a call to make sure we're on the same page about what success looks like. I want to make sure we're using our energy and resources on what actually matters to you and your audience!</p>
                 </div>
             </div>
         </div>
@@ -196,7 +196,7 @@
                 <span class="method-num">03</span>
                 <div class="method-body">
                     <h3>Production</h3>
-                    <p>Placeholder — executing the shoot with energy, precision, and adaptability to capture the best possible content.</p>
+                    <p>This is the fun part! I'll show up with a clear plan and the energy to match, and if something better presents itself on the day, we'll go for it, 100%.</p>
                 </div>
             </div>
         </div>
@@ -206,7 +206,7 @@
                 <span class="method-num">04</span>
                 <div class="method-body">
                     <h3>Post-Production</h3>
-                    <p>Placeholder — editing, colour grading, and refining every frame until the final product exceeds expectations.</p>
+                    <p>This is where everything comes together. We'll work through revisions at a pace that works for you, and I have found that a quick call and regular checkins are huge in making sure we're telling your story the way you imagined it.</p>
                 </div>
             </div>
         </div>
@@ -216,7 +216,7 @@
                 <span class="method-num">05</span>
                 <div class="method-body">
                     <h3>Project Closeout</h3>
-                    <p>Placeholder — delivering final files, gathering feedback, and making sure you walk away completely satisfied.</p>
+                    <p>Once we wrap, I want to hear how it all landed. I really value the relationships I build with clients and I'm always hoping a project is the start of something ongoing, more than just a one-time thing.</p>
                 </div>
             </div>
         </div>
