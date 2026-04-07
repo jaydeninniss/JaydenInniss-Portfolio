@@ -309,12 +309,13 @@ h3 {
         }
 
         #sports {
-            background-image: url("../gallery/sports/ski-39.webp");
+            background-image: url("../gallery/sports/cover.webp");
         }
 
         #events {
             background-image: url("../gallery/events/cover.webp");
             filter: grayscale(100%);
+            background-position: center -150px;
         }
 
         .seemore-container {
