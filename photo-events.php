@@ -110,12 +110,12 @@
                                 <a href="projects/vrca"></a>
                             </figure>
 
-                            <h3 class="client-title-mobile">Whistler Writers Festival</h3>
+                            <!-- <h3 class="client-title-mobile">Whistler Writers Festival</h3>
                             <figure class="figure client">
                                 <img src="/gallery/projects/wwf/cover.webp" loading="lazy">
                                 <figcaption><h3 class="client-title-desktop">Whistler Writers Festival</h3></figcaption>
                                 <a href="projects/wwf"></a>
-                            </figure>
+                            </figure> -->
 
                             <h3 class="client-title-mobile">UBC Ski and Board Club</h3>
                             <figure class="figure client">

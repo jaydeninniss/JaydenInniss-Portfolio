@@ -14,6 +14,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server:  82.198.236.70
+        server: 82.198.236.70
         username: u982216266.jaydeninnissautodeploygithubaction
         password: ${{ secrets.ftp_password }}
+        port: 21
+        protocol: ftps
