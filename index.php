@@ -70,8 +70,8 @@
                 <img src="./media/img/jayden24profilepic.webp" alt="Jayden Inniss Profile Picture" id="profile-pic" loading="lazy">
             </div>
             <div class="about-right">
-                <h1>Jayden Inniss<span id='jaydenstitle'><br>TAGLINE</span></h1>
-                <p>Over the past seven years, I have built a freelance business, collaborating with various companies and organizations to produce photo/video marketing content. Recently, I have worked as a camera operator for sports broadcast events. <br><br>With proficiency in both extreme sports and digital marketing, I create specialized marketing content tailored to outdoor enthusiasts like myself. I always make room in my pack for my camera!</p>
+                <h1>Jayden Inniss<span id='jaydenstitle'><br>Creating high-energy content for outdoor enthusiasts like myself.</span></h1>
+                <p>I specialize in event photo and video content for events and the outdoor industry, even better when it's both. I balance my freelance business with broadcast camera operating for events such as FIFA 2026, Crankworx and various sporting events in the Sea to Sky.<br><br>With a New Media Diploma and a Bachelor of Creative Industries from BCIT under my belt, I bring the technical knowledge from my education and the soft skills built through years of running my own business to bring value beyond just what's in my camera bag.</p>
             </div>
         </div>
             
@@ -111,30 +111,8 @@
                 </a>
             </div>
         </div>
-            
-        
 
-        <a href="video">
-            <div class="videography">
-                <h3>VIDEOGRAPHY</h3>
-                <div class="seemore-container">
-                        <p class="seemore-text">View Video Projects →</p>
-                    </div>
-            </div>
-        </a>
-
-        <!-- <a href="project">
-            <div class="project">
-                <h3 id="project-header">CASE STUDIES</h3>
-                <div class="seemore-container">
-                    <p class="seemore-text">Read Featured Projects →</p>
-                </div>
-            </div>
-        </a> -->
-
-    </div>  
-
-    <div class="clients">
+        <div class="clients">
             <div class="client-header">
                 <h2>HAPPY CLIENTS & COLLABORATIONS</h2>
             </div>
@@ -165,6 +143,26 @@
                 </div>
             </div>
         </div>
+
+        <a href="video">
+            <div class="videography">
+                <h3>VIDEOGRAPHY</h3>
+                <div class="seemore-container">
+                        <p class="seemore-text">View Video Projects →</p>
+                    </div>
+            </div>
+        </a>
+
+        <!-- <a href="project">
+            <div class="project">
+                <h3 id="project-header">CASE STUDIES</h3>
+                <div class="seemore-container">
+                    <p class="seemore-text">Read Featured Projects →</p>
+                </div>
+            </div>
+        </a> -->
+
+    </div>  
 
     <!-- METHODOLOGY -->
     <section class="methodology">

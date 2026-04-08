@@ -70,10 +70,10 @@
             </div>
 
             <div class="description-container">
-                <p>Over the past <span class = "highlight">six years,</span> I have built a <span class = "highlight">freelance business,</span> collaborating with companies and organizations in the outdoor industry to produce photo/video marketing content. Recently, I have worked as a camera operator for sports broadcast events. <br><br>With proficiency in <span class = "highlight">both extreme sports and digital marketing,</span> I create specialized marketing content tailored to outdoor enthusiasts like myself. </p>
+                <p>I specialize in event photo and video content for events and the outdoor industry, even better when it's both. I balance my freelance business with broadcast camera operating for events such as FIFA 2026, Crankworx and various sporting events in the Sea to Sky.<br><br>With a New Media Diploma and a Bachelor of Creative Industries from BCIT under my belt, I bring the technical knowledge from my education and the soft skills built through years of running my own business to bring value beyond just what's in my camera bag.</p>
             </div>
             
-            <h3>I bring to the team a <span id="green-highlight"> high-energy infectious positivity!</span></h3>
+            <h3>I bring to the team <span id="green-highlight">a high-energy infectious positivity!</span></h3>
         
             <div class="qa-container">
                 <!-- <div class="question">
