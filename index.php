@@ -26,8 +26,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- LENIS - SMOOTH SCROLL -->
-    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script> 
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
+    <!-- <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script> 
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css"> -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">    
@@ -71,7 +71,7 @@
             </div>
             <div class="about-right">
                 <h1>Jayden Inniss<span id='jaydenstitle'><br>TAGLINE</span></h1>
-                <p>Over the past five years, I have built a freelance business, collaborating with various companies and organizations to produce photo/video marketing content. Recently, I have worked as a camera operator for sports broadcast events. <br><br>With proficiency in both extreme sports and digital marketing, I create specialized marketing content tailored to outdoor enthusiasts like myself. I always make room in my pack for my camera!</p>
+                <p>Over the past seven years, I have built a freelance business, collaborating with various companies and organizations to produce photo/video marketing content. Recently, I have worked as a camera operator for sports broadcast events. <br><br>With proficiency in both extreme sports and digital marketing, I create specialized marketing content tailored to outdoor enthusiasts like myself. I always make room in my pack for my camera!</p>
             </div>
         </div>
             
@@ -112,7 +112,29 @@
             </div>
         </div>
             
-        <div class="clients">
+        
+
+        <a href="video">
+            <div class="videography">
+                <h3>VIDEOGRAPHY</h3>
+                <div class="seemore-container">
+                        <p class="seemore-text">View Video Projects →</p>
+                    </div>
+            </div>
+        </a>
+
+        <!-- <a href="project">
+            <div class="project">
+                <h3 id="project-header">CASE STUDIES</h3>
+                <div class="seemore-container">
+                    <p class="seemore-text">Read Featured Projects →</p>
+                </div>
+            </div>
+        </a> -->
+
+    </div>  
+
+    <div class="clients">
             <div class="client-header">
                 <h2>HAPPY CLIENTS & COLLABORATIONS</h2>
             </div>
@@ -143,26 +165,6 @@
                 </div>
             </div>
         </div>
-
-        <a href="video">
-            <div class="videography">
-                <h3>VIDEOGRAPHY</h3>
-                <div class="seemore-container">
-                        <p class="seemore-text">View Video Projects →</p>
-                    </div>
-            </div>
-        </a>
-
-        <!-- <a href="project">
-            <div class="project">
-                <h3 id="project-header">CASE STUDIES</h3>
-                <div class="seemore-container">
-                    <p class="seemore-text">Read Featured Projects →</p>
-                </div>
-            </div>
-        </a> -->
-
-    </div>  
 
     <!-- METHODOLOGY -->
     <section class="methodology">
