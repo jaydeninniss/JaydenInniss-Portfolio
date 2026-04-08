@@ -229,23 +229,6 @@
 
     <?php include "parts/footer.php" ?>
 
-    <script>
-        // Methodology — scale + fade previous steps as next card arrives
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.utils.toArray('.method-step').forEach((step) => {
-            gsap.to(step, {
-                scale: 0.94,
-                opacity: 0.5,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: step,
-                    start: 'top top+=80',
-                    end: 'bottom top+=120',
-                    scrub: true,
-                }
-            });
-        });
-    </script>
     <script src="js/home.js"></script>
     <script src="/js/parallaxhero/parallaxhero_home.js"></script>
     <script src="/js/lenis.js"></script>
