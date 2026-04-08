@@ -61,7 +61,7 @@
             <div id="about-hero-bg"></div>
             <div id="about-hero-jayden"></div>
         </div>
-<!-- END HERO IMAGE -->
+<!-- END HERO IMAGE yuup-->
 
         <div class="content-container">
 
