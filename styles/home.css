@@ -45,6 +45,7 @@ h3 {
         width: 100%;
         height: 1000px;
         scale: 100%;
+        will-change: transform;
 
         @media screen and (min-width: 1200px) {
             width: 100%;
@@ -59,8 +60,9 @@ h3 {
         background-size: cover;
         position: absolute;
         width: 100%;
-        height: 1000px; 
-        scale: 100%;    
+        height: 1000px;
+        scale: 100%;
+        will-change: transform;
         /* transform: translateY(190px); */
 
         @media screen and (min-width: 1200px) {
@@ -78,6 +80,7 @@ h3 {
         width: 100%;
         height: 1000px;
         scale: 100%;
+        will-change: transform;
         transform: translateY(140px);
 
         @media screen and (min-width: 1200px) {
@@ -93,8 +96,9 @@ h3 {
         background-size: cover;
         position: absolute;
         width: 100%;
-        height: 1000px; 
-        scale: 100%; 
+        height: 1000px;
+        scale: 100%;
+        will-change: transform;
         transform: translateY(300px);
 
         @media screen and (min-width: 1200px) {
