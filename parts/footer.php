@@ -13,7 +13,7 @@
         </div>
         <div class="rightfoot">
             <p>
-            <a href="mailto:contact@jaydeninniss.com" id="email">Contact@jaydeninniss.com</a><br><br>
+            <a href="mailto:jaydeninniss@gmail.com" id="email">jayden.inniss@gmail.com</a><br><br>
             778-793-5323</p>
         </div>
     </div>
